@@ -54,6 +54,12 @@ Configures defaults/sysconfig env vars for the Elasticsearch service.
 Allows configuration of elasticsearch plugins.
 
 
+``elasticsearch.systemd``
+ -------------------------
+
+ Configure system limits for the Elasticsearch service [on systems that use systemd](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-system-settings.html#systemd).
+
+
 Notes
 =====
 
@@ -81,3 +87,21 @@ Requirements
     gem install bundler
     bundle install
     bundle exec kitchen test
+
+
+ mkvirtualenv --python=$(which python2) elasticsearch-formula
+
+[elasticsearch-formula] washkinazy:~/dev/rd/elasticsearch-formula (testing)
+$ rvm --ruby-version --create 2.3.0@elasticsearch-formula
+ruby-2.3.0 - #gemset created /Users/washkinazy/.rvm/gems/ruby-2.3.0@elasticsearch-formula
+ruby-2.3.0 - #generating elasticsearch-formula wrappers..........
+Using /Users/washkinazy/.rvm/gems/ruby-2.3.0 with gemset elasticsearch-formula
+
+[elasticsearch-formula] washkinazy:~/dev/rd/elasticsearch-formula (testing)
+$ gem install bundler
+Fetching: bundler-1.15.4.gem (100%)
+Successfully installed bundler-1.15.4
+Parsing documentation for bundler-1.15.4
+Installing ri documentation for bundler-1.15.4
+Done installing documentation for bundler after 4 seconds
+1 gem installed
