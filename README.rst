@@ -38,11 +38,6 @@ Installs Elasticsearch.
 Adds the Elasticsearch pkg repo.
 
 
-``elasticsearch.service``
--------------------------
-
-Manages the Elasticsearch service.
-
 ``elasticsearch.sysconfig``
 ---------------------------
 
@@ -80,28 +75,3 @@ Requirements
 * Python
 * Ruby
 * Docker
-
-::
-
-    pip install -r requirements.txt
-    gem install bundler
-    bundle install
-    bundle exec kitchen test
-
-
- mkvirtualenv --python=$(which python2) elasticsearch-formula
-
-[elasticsearch-formula] washkinazy:~/dev/rd/elasticsearch-formula (testing)
-$ rvm --ruby-version --create 2.3.0@elasticsearch-formula
-ruby-2.3.0 - #gemset created /Users/washkinazy/.rvm/gems/ruby-2.3.0@elasticsearch-formula
-ruby-2.3.0 - #generating elasticsearch-formula wrappers..........
-Using /Users/washkinazy/.rvm/gems/ruby-2.3.0 with gemset elasticsearch-formula
-
-[elasticsearch-formula] washkinazy:~/dev/rd/elasticsearch-formula (testing)
-$ gem install bundler
-Fetching: bundler-1.15.4.gem (100%)
-Successfully installed bundler-1.15.4
-Parsing documentation for bundler-1.15.4
-Installing ri documentation for bundler-1.15.4
-Done installing documentation for bundler after 4 seconds
-1 gem installed
